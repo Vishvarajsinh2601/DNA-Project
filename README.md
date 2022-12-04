@@ -1,39 +1,35 @@
 # DNA_stability
-
-[![Build Status](https://travis-ci.com/jamesmtuck/DNA_stability.svg?token=rCvdBqMzwWyNvxxUUbSh&branch=main)](https://travis-ci.com/jamesmtuck/DNA_stability)
-
 - [Overview](#overview)
 - [Documentation](#documentation)
-- [System Requirements](#system-requirements)
+- [System Requierments](#system-Requierments)
 - [Installation Guide](#installation-guide)
-- [License](#license)
-- [Issues](https://github.com/jamesmtuck/DNA_stability/issues)
+- [Issues](https://github.com/Vishvaraj2601/DNA-Project/issues)
 
 # Overview
-
-Analysis of DNA stability on design of error correction codes for DNA-based data storage. 
+Design of error-correcting codes for DNA-based data storage is based on an analysis of DNA stability.. 
 
 # Documentation
 
-As documentation for the softwarwe becomes available, it will be placed under the docs folder.
+As documentation for the softwarwe becomes available, it will be placed under the docs folder. We also generated one .exe file. It will generate the plots as a result direct in one click.
 
-# System Requirements
+# System Requierments
 
-## Hardware Requirements
-This code requires only a standard computer with enough RAM and compute power to support the needed operations.
+## Hardware Specifications
+Only a basic computer with appropriate RAM and processing capability is needed to run this code.
 
-## Software Requirements
+## Software Requierments
 ### OS Requirements
-This package is supported for macOS and Linux. The package has been tested on the following systems:
+This package is supported for windows, macOS and Linux. The package has been tested on the following systems:
 
 + macOS: Catalina 10.15.3
 + Linux: Ubuntu 18.04.3
++ Windows : Windows 8/10/11
 
 Note that most OSes will support our software by using Docker.
 
 ### Library Dependences
 
-The python packages used for high precision floating point operations have dependences with libraries written in other languages. They can be installed using common package managers:
+For high precision floating point calculations, Python packages are dependent on libraries created in other programming languages. They are installable using popular package managers:
 ```
 apt-get install libgmp-dev libmpc-dev libmpfr-dev
 ```
@@ -41,7 +37,7 @@ If you use Docker, the provided Dockerfile will install the needed libraries.
 
 ### Python Dependences
 
-Our code has been written and tested on python versions 3.6 to 3.8. It has the following dependences:
+Python versions 3.6 to 3.8 were used for the development and testing of our programmes. It is dependent on the following things:
 
 ```
 nose
@@ -58,35 +54,16 @@ gmpy2
 # Installation Guide
 
 ## Use your local python environment
-If you already have python 3 installed on your system, the simplest thing to do is download or checkout the code from GitHub.  Then in the DNA_stability directory, run the following commands:
+The easiest thing to do is download or checkout the code from GitHub if you already have Python 3 installed on your computer. Run the subsequent commands in the DNA stability directory after that:
 
     git clone https://github.com/jamesmtuck/DNA_stability
     cd DNA_stability
     pip install -r requirements.txt
-
-## Use Docker
-
-If you do not already have Docker, you will need to install Docker on your system. It is available for free for most versions of Windows, Linux, and MacOS. You may need to be the owner or administrator of the system to install Docker.
-
-Instructions for setting up Docker.  From a command prompt, run these commands:
-
-    git clone https://github.com/jamesmtuck/DNA_stability
-    cd DNA_stability
-    docker build -t stability:1.0 .
-    docker run -it -v `pwd`:/stability stability:1.0 /bin/bash
-
-This will bring up a command prompt in a Linux container where commands can be executed. 
-
-## Run Our Analyses
+    
+## Execute Our Analysis
 
 Run the main script this way:
 
     python3 stability.py
     
 This command should run to completion within a few minutes.
-
-# License
-
-This software is released under the MIT License.
-
-
