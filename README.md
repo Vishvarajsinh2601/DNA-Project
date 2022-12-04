@@ -56,8 +56,8 @@ gmpy2
 ## Use your local python environment
 The easiest thing to do is download or checkout the code from GitHub if you already have Python 3 installed on your computer. Run the subsequent commands in the DNA stability directory after that:
 
-    git clone https://github.com/jamesmtuck/DNA_stability
-    cd DNA_stability
+    git clone https://github.com/Vishvaraj2601/DNA-Project
+    cd DNA-Project
     pip install -r requirements.txt
     
 ## Execute Our Analysis
